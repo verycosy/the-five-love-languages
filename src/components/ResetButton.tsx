@@ -14,5 +14,9 @@ export function ResetButton() {
     navigate('/');
   };
 
-  return <div onClick={reset}>다시하기</div>;
+  return (
+    <div onClick={reset} className='button'>
+      다시하기
+    </div>
+  );
 }

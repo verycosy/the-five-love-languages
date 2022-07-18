@@ -13,12 +13,21 @@ export function Result() {
 
   return (
     <div>
-      <div>
-        <div>A - 인정하는 말 : {getAnswerTypeCount('A')}</div>
-        <div>B - 함께하는 시간 : {getAnswerTypeCount('B')}</div>
-        <div>C - 선물 : {getAnswerTypeCount('C')}</div>
-        <div>D - 봉사 : {getAnswerTypeCount('D')}</div>
-        <div>E - 스킨십 : {getAnswerTypeCount('E')}</div>
+      <div className='type-grid'>
+        <div>인정하는 말(A)</div>
+        <div>{getAnswerTypeCount('A')}</div>
+
+        <div>함께하는 시간(B)</div>
+        <div>{getAnswerTypeCount('B')}</div>
+
+        <div>선물(C)</div>
+        <div>{getAnswerTypeCount('C')}</div>
+
+        <div>봉사(D)</div>
+        <div>{getAnswerTypeCount('D')}</div>
+
+        <div>스킨십(E)</div>
+        <div>{getAnswerTypeCount('E')}</div>
       </div>
 
       <div className='commentary-container'>
@@ -66,7 +75,7 @@ export function Result() {
         <div className='commentary-partner'>{commentary.E[1]}</div>
       </div>
 
-      <div>
+      <div className='button-group'>
         <ShareButton />
         <ResetButton />
       </div>

@@ -11,5 +11,9 @@ export function ShareButton() {
     }
   };
 
-  return <div onClick={share}>공유</div>;
+  return (
+    <div onClick={share} className='button'>
+      공유하기
+    </div>
+  );
 }

@@ -1,4 +1,5 @@
 .App {
+  padding: 20px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +23,10 @@
   line-height: 1.5;
 }
 
+.choice:active {
+  background-color: #eee;
+}
+
 .choice + .choice {
   margin-top: 16px;
 }
@@ -33,10 +38,10 @@
 }
 
 .commentary-container {
-  margin: 20px;
   padding: 20px 16px;
   color: #333;
   background-color: white;
+  margin-top: 20px;
 }
 
 .commentary-type {
@@ -54,4 +59,36 @@
 .commentary-partner-title {
   margin: 32px 0 6px;
   font-weight: 700;
+}
+
+.type-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: white;
+  row-gap: 6px;
+  font-size: 14px;
+  padding: 20px;
+  color: #333;
+}
+
+.type-grid div:nth-child(odd) {
+  font-weight: 600;
+}
+
+.button {
+  border-radius: 20px;
+  width: 100px;
+  text-align: center;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-group div:first-child {
+  margin-right: 8px;
 }
