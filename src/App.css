@@ -1,5 +1,5 @@
 .App {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,4 +30,28 @@
   margin-top: 20px;
   font-size: 14px;
   color: #333;
+}
+
+.commentary-container {
+  margin: 20px;
+  padding: 20px 16px;
+  color: #333;
+  background-color: white;
+}
+
+.commentary-type {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.commentary,
+.commentary-partner {
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.commentary-partner-title {
+  margin: 32px 0 6px;
+  font-weight: 700;
 }
