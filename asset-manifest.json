@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/the-five-love-languages/static/css/main.1f52e1c1.css",
-    "main.js": "/the-five-love-languages/static/js/main.c7c77622.js",
+    "main.js": "/the-five-love-languages/static/js/main.bf17ac56.js",
     "index.html": "/the-five-love-languages/index.html",
     "main.1f52e1c1.css.map": "/the-five-love-languages/static/css/main.1f52e1c1.css.map",
-    "main.c7c77622.js.map": "/the-five-love-languages/static/js/main.c7c77622.js.map"
+    "main.bf17ac56.js.map": "/the-five-love-languages/static/js/main.bf17ac56.js.map"
   },
   "entrypoints": [
     "static/css/main.1f52e1c1.css",
-    "static/js/main.c7c77622.js"
+    "static/js/main.bf17ac56.js"
   ]
 }
