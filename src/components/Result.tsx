@@ -1,5 +1,6 @@
 import { useSearchParams } from 'react-router-dom';
 import { AnswerType } from '../questions';
+import { ResetButton } from './ResetButton';
 import { ShareButton } from './ShareButton';
 
 export function Result() {
@@ -19,7 +20,10 @@ export function Result() {
         <div>E - 스킨쉽 : {getAnswerTypeCount('E')}</div>
       </div>
 
-      <ShareButton />
+      <div>
+        <ShareButton />
+        <ResetButton />
+      </div>
     </div>
   );
 }
