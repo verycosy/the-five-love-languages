@@ -1,8 +1,8 @@
 import { useSearchParams } from 'react-router-dom';
 import { commentary } from '../data/commentary';
 import { AnswerType } from '../data/questions';
-import { ResetButton } from './ResetButton';
-import { ShareButton } from './ShareButton';
+import { ResetButton } from '../components/result/ResetButton';
+import { ShareButton } from '../components/result/ShareButton';
 
 export function Result() {
   const [searchParams] = useSearchParams();

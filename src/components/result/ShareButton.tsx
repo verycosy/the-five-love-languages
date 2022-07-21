@@ -1,4 +1,4 @@
-import { GA4 } from '../utils/ga';
+import { GA4 } from '../../utils/ga';
 
 export function ShareButton() {
   const share = () => {

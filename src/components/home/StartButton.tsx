@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { GA4 } from '../utils/ga';
+import { GA4 } from '../../utils/ga';
 
 export function StartButton() {
   const navigate = useNavigate();

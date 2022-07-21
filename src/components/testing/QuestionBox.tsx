@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { useRecoilValue } from 'recoil';
-import currentIndexState from '../atoms/current-index';
-import { questions } from '../data/questions';
+import currentIndexState from '../../atoms/current-index';
+import { questions } from '../../data/questions';
 import { Choice } from './Choice';
 
 export function QuestionBox() {

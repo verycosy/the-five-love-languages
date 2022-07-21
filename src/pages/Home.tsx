@@ -1,4 +1,4 @@
-import { StartButton } from './StartButton';
+import { StartButton } from '../components/home/StartButton';
 
 export function Home() {
   return (

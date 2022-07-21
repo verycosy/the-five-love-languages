@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import { Home } from './components/Home';
-import { Result } from './components/Result';
-import { Testing } from './components/Testing';
+import { Home } from './pages/Home';
+import { Result } from './pages/Result';
+import { Testing } from './pages/Testing';
 import { usePageView } from './hooks/usePageView';
 
 function App() {
