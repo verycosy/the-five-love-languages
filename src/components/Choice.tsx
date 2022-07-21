@@ -1,7 +1,7 @@
 import { useRecoilState, useSetRecoilState } from 'recoil';
 import answerTypeCountState from '../atoms/answer-type-count';
 import currentIndexState from '../atoms/current-index';
-import { Answer } from '../questions';
+import { Answer } from '../data/questions';
 
 export function Choice({ answer }: Props) {
   const setCurrentIndex = useSetRecoilState(currentIndexState);

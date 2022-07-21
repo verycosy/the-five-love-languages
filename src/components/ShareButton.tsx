@@ -1,3 +1,5 @@
+import { GA4 } from '../utils/ga';
+
 export function ShareButton() {
   const share = () => {
     if (window.navigator.share) {
@@ -9,6 +11,8 @@ export function ShareButton() {
     } else {
       // copy url
     }
+
+    GA4.event('share');
   };
 
   return (

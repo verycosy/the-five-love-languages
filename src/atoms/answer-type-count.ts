@@ -1,5 +1,5 @@
 import { atom } from 'recoil';
-import { AnswerType } from '../questions';
+import { AnswerType } from '../data/questions';
 
 type AnswerTypeCount = {
   [key in AnswerType]: number;

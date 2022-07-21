@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { useRecoilValue } from 'recoil';
 import answerTypeCountState from '../atoms/answer-type-count';
 import currentIndexState from '../atoms/current-index';
-import { questions } from '../questions';
+import { questions } from '../data/questions';
+import { GA4 } from '../utils/ga';
 
 export function CurrentIndex() {
   const navigate = useNavigate();
@@ -13,6 +14,8 @@ export function CurrentIndex() {
 
   useEffect(() => {
     if (currentIndex === totalQuestionLength) {
+      GA4.event('result', answerTypeCount);
+
       const query = Object.entries(answerTypeCount).reduce(
         (acc, cur) => (acc += `${cur[0]}=${cur[1]}&`),
         ''

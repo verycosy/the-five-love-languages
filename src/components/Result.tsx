@@ -1,6 +1,6 @@
 import { useSearchParams } from 'react-router-dom';
-import { commentary } from '../commentary';
-import { AnswerType } from '../questions';
+import { commentary } from '../data/commentary';
+import { AnswerType } from '../data/questions';
 import { ResetButton } from './ResetButton';
 import { ShareButton } from './ShareButton';
 

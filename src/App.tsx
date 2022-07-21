@@ -1,30 +1,22 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import { CurrentIndex } from './components/CurrentIndex';
 import { Home } from './components/Home';
-import { QuestionBox } from './components/QuestionBox';
 import { Result } from './components/Result';
+import { Testing } from './components/Testing';
+import { usePageView } from './hooks/usePageView';
 
 function App() {
+  usePageView();
+
   return (
     <div className='App'>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <Routes>
-          <Route path='/'>
-            <Route index element={<Home />} />
-            <Route
-              path='test'
-              element={
-                <>
-                  <QuestionBox />
-                  <CurrentIndex />
-                </>
-              }
-            />
-            <Route path='result' element={<Result />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route path='/'>
+          <Route index element={<Home />} />
+          <Route path='test' element={<Testing />} />
+          <Route path='result' element={<Result />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
